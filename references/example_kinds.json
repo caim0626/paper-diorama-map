@@ -1,0 +1,11 @@
+{
+"kinds": {
+  "pine": {"tall": 5.5, "sway": 0.12}, "cedar": {"tall": 6.5, "sway": 0.15}, "maple": {"tall": 4.8, "sway": 0.18},
+  "shrub": {"tall": 1.7, "sway": 0.06}, "grass": {"tall": 0.9, "sway": 0.18}, "flowers": {"tall": 0.6, "sway": 0.12},
+  "reeds": {"tall": 1.7, "sway": 0.4}, "stones": {"tall": 0.7}, "boulder": {"tall": 1.9}, "lantern": {"tall": 1.9},
+  "barrel": {"tall": 1.0}, "crates": {"tall": 1.3}, "well": {"tall": 2.4},
+  "gatehouse": {"tall": 7.5}, "pier": {"tall": 5.5}
+},
+"woods": ["pine", "pine", "pine", "cedar", "cedar", "shrub", "maple"],
+"walker": {"png": "art/walker.png", "frames": 4, "tall": 4.2}
+}

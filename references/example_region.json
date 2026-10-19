@@ -1,0 +1,44 @@
+{"id": "valley", "name": "Valley", "size": [640, 360], "start": "gate",
+"places": [
+  {"id": "gate", "kind": "sight", "name": "Gate", "at": [600, 140]},
+  {"id": "square", "kind": "fork", "name": "", "at": [430, 230]},
+  {"id": "inn", "kind": "building", "name": "Inn", "at": [520, 222]},
+  {"id": "shop", "kind": "building", "name": "Shop", "at": [400, 220]},
+  {"id": "chapel", "kind": "building", "name": "Chapel", "at": [380, 160]},
+  {"id": "dock", "kind": "sight", "name": "Dock", "at": [300, 287]},
+  {"id": "farm", "kind": "sight", "name": "Farm", "at": [270, 130]}
+],
+"roads": [
+  {"a": "gate", "b": "inn", "via": [[600, 175], [585, 222]]},
+  {"a": "inn", "b": "square", "via": [[480, 232]]},
+  {"a": "square", "b": "shop", "via": [[415, 230]]},
+  {"a": "shop", "b": "chapel", "via": [[372, 198], [376, 176]]},
+  {"a": "shop", "b": "dock", "via": [[340, 225], [305, 255]]},
+  {"a": "chapel", "b": "farm", "via": [[330, 166], [295, 150]]}
+],
+"terrain": {
+  "pieces": [
+    {"sprite": "inn", "at": [520, 214], "for": "inn"},
+    {"sprite": "shop", "at": [400, 212], "for": "shop"},
+    {"sprite": "chapel", "at": [380, 153], "for": "chapel"},
+    {"sprite": "gatehouse", "at": [600, 134], "for": "gate"},
+    {"sprite": "pier", "at": [292, 293], "for": "dock"},
+    {"sprite": "farmhouse", "at": [262, 124], "for": "farm"},
+    {"sprite": "lantern", "at": [440, 242]}
+  ],
+  "scatter": {"grass": 300, "flowers": 40, "shrub": 50, "stones": 50, "boulder": 10, "pine": 12, "reeds": 40},
+  "solid": {"pine": 2.5, "boulder": 3.0, "lantern": 1.5, "barrel": 1.2, "crates": 1.5, "well": 3.0},
+  "dress": {"inn": ["barrel", "crates", "lantern"], "shop": ["barrel", "crates"], "farmhouse": ["well", "crates"]},
+  "levels": [
+    {"h": 4.0, "poly": [[40, 0], [520, 0], [520, 150], [470, 190], [340, 196], [180, 190], [40, 150]]},
+    {"h": 7.0, "poly": [[350, 138], [422, 138], [432, 182], [356, 186]]}
+  ],
+  "mountain": {"h": 3.0, "rise": 0.32, "top": 30.0, "poly": [[525, 140], [560, 60], [640, 15], [640, 118], [560, 135]]},
+  "stairs": [[[610, 128], [606, 95], [600, 55]]],
+  "river": {"width": 16, "depth": 2.4, "line": [[150, -10], [200, 110], [263, 233], [287, 287], [313, 370]]},
+  "forests": [
+    [[0, 140], [40, 187], [87, 300], [0, 287]],
+    [[0, 287], [173, 320], [500, 330], [640, 307], [640, 360], [0, 360]],
+    [[520, 157], [640, 173], [640, 253], [547, 187]]
+  ]
+}}
